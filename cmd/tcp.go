@@ -1,7 +1,3 @@
-/*
-Copyright © 2022 NAME HERE <EMAIL ADDRESS>
-
-*/
 package cmd
 
 import (
@@ -13,13 +9,8 @@ import (
 // tcpCmd represents the tcp command
 var tcpCmd = &cobra.Command{
 	Use:   "tcp",
-	Short: "A brief description of your command",
-	Long: `A longer description that spans multiple lines and likely contains examples
-and usage of using your command. For example:
-
-Cobra is a CLI library for Go that empowers applications.
-This application is a tool to generate the needed files
-to quickly create a Cobra application.`,
+	Short: "Connect to test or send messages bya TCP",
+	Long:  `This function has some default settings but others are required like url and port`,
 	Run: func(cmd *cobra.Command, args []string) {
 		fmt.Println("tcp called")
 	},
